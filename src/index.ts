@@ -152,16 +152,16 @@ function ErrorUsuario():never{
 let puntaje:number | string = 98 //sirve para definir mas de un tipo de dato en caso de ser necesario
 puntaje = 'hola mundo'
 
-type Animal = {
-    id:number,
-    estado: string
-}
+// type Animal = {
+//     id:number,
+//     estado: string
+// }
 type Usuario = {
     id:number,
     name:string
 }
 
-let animal: Usuario | Animal = { id: 1, estado: '', name: '' }
+// let animal: Usuario | Animal = { id: 1, estado: '', name: '' }
 
 //union types functions
 function sumaDos (n: number | string): number {
@@ -250,10 +250,10 @@ const input = <HTMLInputElement> document.getElementById('username')
 function Lala(x:string | number){
     //type narrowing
     if(typeof x === 'number'){
-        x. //asi obtendre los metodos si es number
+        //asi obtendre los metodos si es number
     }
     if(typeof x === 'string'){
-        x. //asi obtendre los metodos si es string
+        //asi obtendre los metodos si es string
     }
 }
 
@@ -266,7 +266,9 @@ function procesa(algo: unknown){
         return algo.toString
     }
     if (algo instanceof String ){ //aqui se llama a una clase, que en este ejemplo es string, pero lo ideal es buscar una instancia de una clase propia que seria algo instanceof miClase
-        {}
+        {
+            return algo.toString()
+        }
 
     }
 }
