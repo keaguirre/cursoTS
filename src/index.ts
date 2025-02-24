@@ -156,10 +156,10 @@ puntaje = 'hola mundo'
 //     id:number,
 //     estado: string
 // }
-type Usuario = {
-    id:number,
-    name:string
-}
+// type Usuario = {
+//     id:number,
+//     name:string
+// }
 
 // let animal: Usuario | Animal = { id: 1, estado: '', name: '' }
 
@@ -179,15 +179,15 @@ type Audit = {
     modified_at: string,
 }
 
-type Product = {
-    name: string,
-}
+// type Product = {
+//     name: string,
+// }
 
-const product: Audit & Product = {
-    created_at: '',
-    modified_at: '',
-    name: ''
-}
+// const product: Audit & Product = {
+//     created_at: '',
+//     modified_at: '',
+//     name: ''
+// }
 //intersection types toma las propiedades de ambos tipos de datos y las une en un solo objeto
 
 //literal types para definir valores especificos
