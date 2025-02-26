@@ -13,10 +13,10 @@ async function fetchData<T>(recurso: string):Promise<T>{
     return respuesta.json();
 }
 
-type User = {
-    id: string;
-    name: string;
-}
+// type User = {
+//     id: string;
+//     name: string;
+// }
 
 async function main(){
     const user = await fetchData<User>('/usuarios');   
