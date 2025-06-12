@@ -1,5 +1,3 @@
-
-
 # Secciones
 
 1. Introduccion
@@ -7,7 +5,6 @@
 3. Tipos avanzados
 4. POO con TS
    -  [indexPOO TS](src/indexPOO.ts)
-   -  [indexPOO TS](src/getter-decorators.ts)
 6. Genericos
    -  [genericos.ts](src/genericos.ts)
 7. Modulos
@@ -17,7 +14,10 @@
    -  [decorators](src/decorators.ts)
    -  [decorator-composition](src/decorator-composition.ts)
    -  [property-decorators](src/property-decorators.ts)
-<code>
+   -  [Getters con Decorators](src/getter-decorators.ts)
+
+## Ejecución
+```bash
 tsc
 node dist [file]
-</code>
+```
